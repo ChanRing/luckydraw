@@ -1,0 +1,33 @@
+//@import "./reset.css";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  //overflow: hidden;
+}
+
+img {
+  display: block;
+}
+
+.title {
+  width: 2.2rem;
+  position: relative;
+  font-size: .4rem;
+  font-weight: bold;
+  color: #04502e;
+  text-align: center;
+  margin: .2rem auto;
+  z-index: 2;
+  &:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -.1rem;
+    content: "";
+    height: .34rem;
+    background-color: rgba(118,206,163,.5);
+    border-radius: .17rem;
+    z-index: -1;
+  }
+}
